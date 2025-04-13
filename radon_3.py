@@ -29,12 +29,12 @@ print("✅ LJM 브랜치 최신화 완료!")
 # 🧮 등급 → 점수 변환 함수
 def grade_to_scores(grade):
     scores = {
-        'A': [10, 10, 10, 10, 10],
-        'B': [9, 9, 9, 9, 9],
-        'C': [7, 7, 7, 7, 7],
-        'D': [5, 4, 4, 4, 4],
-        'E': [3, 2, 2, 2, 2],
-        'F': [1, 1, 1, 1, 1],
+        'A': [100, 100, 100, 100, 100],
+        'B': [90, 90, 90, 90, 90],
+        'C': [70, 70, 70, 70, 70],
+        'D': [50, 40, 40, 40, 40],
+        'E': [30, 20, 20, 20, 20],
+        'F': [10, 10, 10, 10, 10],
     }
     return scores.get(grade.upper(), [0, 0, 0, 0, 0])
 
@@ -75,11 +75,11 @@ def analyze_radon(file_path):
 
         # 출력
         print("\n📈 항목별 평균 점수:")
-        print(f"• 구조 복잡도: {structure_score}/10")
-        print(f"• 테스트 용이성: {testability_score}/10")
-        print(f"• 유지 보수성: {maintainability_score}/10")
-        print(f"• 가독성: {readability_score}/10")
-        print(f"• 코드 품질: {quality_score}/10")
+        print(f"• 구조 복잡도: {structure_score}/100")
+        print(f"• 테스트 용이성: {testability_score}/100")
+        print(f"• 유지 보수성: {maintainability_score}/100")
+        print(f"• 가독성: {readability_score}/100")
+        print(f"• 코드 품질: {quality_score}/100")
 
         # 반환할 수도 있음
         return {
